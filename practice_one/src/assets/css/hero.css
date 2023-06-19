@@ -1,0 +1,67 @@
+/*------------------------------------*\
+  #HERO CSS
+\*------------------------------------*/
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 156px;
+  gap: 86.43px;
+}
+
+.hero__bg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.hero__bg__top {
+  position: absolute;
+  left: -50%;
+
+  width: 100vw;
+  max-height: 900px;
+
+  z-index: 2;
+}
+
+.hero__bg__bottom {
+  position: absolute;
+  width: 100vw;
+  max-height: 1050px;
+  left: -50%;
+  top: 58px;
+  z-index: 1;
+}
+
+.hero__screen {
+  z-index: 2;
+  box-shadow: 0px 9.86057px 19.7211px rgba(0, 0, 0, 0.16),
+    0px 9.86057px 131.474px rgba(0, 0, 0, 0.23);
+
+  transition: transform 0.2s ease;
+}
+
+.hero__screen:hover {
+  transform: scale(1.1);
+}
+
+.hero__right {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 99px 64px 0px;
+  gap: 60px;
+
+  width: 420px;
+  height: 471px;
+}
+
+.hero__subcribe-btn {
+  align-items: center;
+  padding: 16px 0px;
+
+  width: 236px;
+  height: 65px;
+}

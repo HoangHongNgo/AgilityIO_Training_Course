@@ -1,0 +1,67 @@
+/*------------------------------------*\
+  #PARTNER CSS
+\*------------------------------------*/
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+
+  padding: 130px 0 80px;
+}
+
+.partner__title {
+  width: 298px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 27px;
+}
+
+.partner__list {
+  margin-top: 90px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 70px;
+
+  max-width: 818px;
+}
+
+.partner__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  width: 238px;
+
+  transition: transform 0.2s ease;
+}
+
+.partner__list__item:hover {
+  transform: scale(1.1);
+}
+
+.partner__list__item > img {
+  width: 122px;
+  height: 123px;
+}
+
+.partner__btn {
+  margin-top: 90px;
+
+  width: 236px;
+  height: 65px;
+}

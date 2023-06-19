@@ -1,0 +1,70 @@
+/*------------------------------------*\
+  #FEATURE CSS
+\*------------------------------------*/
+
+.feature {
+  margin-top: 180px;
+  padding-top: 81px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__title {
+  margin-top: 17px;
+}
+
+.feature__sub-title {
+  margin: 27px auto 0;
+  max-width: 298px;
+  height: 40px;
+}
+
+.feature__list {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 52px;
+
+  width: 100%;
+
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 20px;
+
+  max-width: 255px;
+  min-width: 200px;
+
+  transition: transform 0.2s ease;
+}
+
+.feature__item:hover {
+  transform: scale(1.1);
+}
+
+.feature__item__title {
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature__item__circle {
+  width: 43px;
+  height: 43.5px;
+  background-color: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+}
