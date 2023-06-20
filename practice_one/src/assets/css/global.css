@@ -22,6 +22,11 @@
   #GLOBAL ELEMENTS
 \*-----------------------------------------*/
 
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   font-weight: var(--fw-light);
   font-size: 15px;
