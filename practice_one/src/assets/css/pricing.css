@@ -9,6 +9,8 @@
 .pricing__message {
   margin-top: 27px;
   margin-bottom: 90px;
+
+  width: 320px !important;
 }
 
 .pricing__pricing-list {
