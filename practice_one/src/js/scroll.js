@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function() {
     var element = document.getElementsByClassName("header")[0];
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var targetScroll = 500; // Adjust this value to change when the color change occurs
+    var targetScroll = 500;
   
     if (scrollTop > targetScroll) {
       element.style.background = "var(--bg-gradient-color)"; // Change to the desired background color
