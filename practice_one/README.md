@@ -53,8 +53,10 @@ git checkout /practice_one
 cd html-css-training
 ```
 
-- Step 04: Next open folder practice-two
+- Step 04: Next open folder practice-one
 
 ```bash
 cd practice-one
 ```
+
+- Step 05: Open index.html
