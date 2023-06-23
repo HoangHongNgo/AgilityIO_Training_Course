@@ -191,12 +191,29 @@
           </div>
         </section>
         <section>
-          <h2>Grid Template Areas</h2>
+          <h2>Named grid lines</h2>
           <h3>
-            grid-template-areas: "header header header header" "sidebar content
-            content content" "sidebar footer footer footer";
+            grid-template-columns:<br />
+            [outer-start] 1fr [center-start] 1fr [center-end] 1fr [outer-end];
           </h3>
           <div class="container container--named">
+            <div class="box start-center">
+              grid-column: outer-start / center-end;
+            </div>
+            <div class="box center-end">
+              grid-column: center-start / outer-end;
+            </div>
+            <div class="box">None</div>
+            <div class="box">None</div>
+          </div>
+        </section>
+        <section>
+          <h2>Grid Template Areas</h2>
+          <h3>
+            grid-template-areas:<br />"header header header header"<br />"sidebar
+            content content content"<br />"sidebar footer footer footer";
+          </h3>
+          <div class="container container--template">
             <div class="box header">header</div>
             <div class="box sidebar">sidebar</div>
             <div class="box content">content</div>

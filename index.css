@@ -123,7 +123,7 @@ strong {
   direction: rtl;
 }
 
-.container--named {
+.container--template {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -147,4 +147,22 @@ strong {
 
 .footer {
   grid-area: footer;
+}
+
+.container--named {
+  display: grid;
+  grid-template-columns:
+    [outer-start] 1fr
+    [center-start] 1fr
+    [center-end] 1fr
+    [outer-end];
+  grid-template-rows: 1fr 1fr;
+}
+
+.start-center {
+  grid-column: outer-start / center-end;
+}
+
+.center-end {
+  grid-column: center-start / outer-end;
 }
