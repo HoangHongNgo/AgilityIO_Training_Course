@@ -3,8 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="">
+          <img src="assets/images/header/logo.png" alt="Figma Land" />
+        </a>
+      </div>
+      <div class="header__right">
+        <nav class="header__navbar navbar">
+          <img
+            src="assets/images/header/menu_icon.svg"
+            alt="menu"
+            class="navbar__icon"
+          />
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+              <a class="text text--light" href="/">Home</a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="text text--light" href="#"> Product </a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="text text--light" href="#"> Pricing </a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="text text--light" href="#"> About </a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="text text--light" href="#"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="subscribe-form">
+          <input
+            class="subscribe-form__input input text"
+            type="text"
+            placeholder="Your Email"
+          />
+          <button
+            class="subscribe-form__subcribe-btn btn btn--light text text--primary text--small"
+            type="button"
+          >
+            Subcribe
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="background"></div>
+      <section class="hero">
+        <div class="hero__title">
+          <h2 class="text text--light text--center">
+            Lightning fast prototyping
+          </h2>
+          <h4 class="text text--light text--center">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </h4>
+        </div>
+        <img
+          src="assets/images/hero/browser.png"
+          alt="hero image"
+          class="hero__img"
+        />
+        <include src="components/button.html"> { "text": "Button" } </include>
+      </section>
+    </main>
+
+    <!-- Dropdown script -->
+    <script src="js/dropdown.js"></script>
+  </body>
 </html>
