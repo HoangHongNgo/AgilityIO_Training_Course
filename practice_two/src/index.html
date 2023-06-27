@@ -16,11 +16,7 @@
       </div>
       <div class="header__right">
         <nav class="header__navbar navbar">
-          <img
-            src="assets/images/header/menu_icon.svg"
-            alt="menu"
-            class="navbar__icon"
-          />
+          <img src="assets/images/header/menu_icon.svg" alt="menu" class="navbar__icon" />
           <ul class="navbar__menu">
             <li class="navbar__menu__item">
               <a class="text text--light" href="/">Home</a>
@@ -40,38 +36,30 @@
           </ul>
         </nav>
         <div class="subscribe-form">
-          <input
-            class="subscribe-form__input input text"
-            type="text"
-            placeholder="Your Email"
-          />
-          <button
-            class="subscribe-form__subcribe-btn btn btn--light text text--primary text--small"
-            type="button"
-          >
+          <input class="subscribe-form__input input text" type="text" placeholder="Your Email" />
+          <button class="subscribe-form__subcribe-btn btn btn--light text text--primary text--small" type="button">
             Subcribe
           </button>
         </div>
       </div>
     </header>
     <main class="content">
-      <div class="background"></div>
+      <div class="background">
+        <img class="background--mobile" src="assets/images/hero/background-mobile.png" alt="mobile background" />
+        <img class="background--desktop" src="assets/images/hero/background-desktop.png" alt="desktop background" />
+      </div>
       <section class="hero">
         <div class="hero__title">
-          <h2 class="text text--light text--center">
-            Lightning fast prototyping
-          </h2>
-          <h4 class="text text--light text--center">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
+          <h2 class="hero__title__main--mobile text text--light text--center">Lightning fast prototyping</h2>
+          <h1 class="hero__title__main--desktop text text--light">We focus on ergonomics</h1>
+          <h4 class="hero__title__sub text text--light text--center">
+            Most calendars are designed for teams. Slate is designed for freelancers
           </h4>
         </div>
-        <img
-          src="assets/images/hero/browser.png"
-          alt="hero image"
-          class="hero__img"
-        />
-        <include src="components/button.html"> { "text": "Button" } </include>
+        <img src="assets/images/hero/browser.png" alt="hero image" class="hero__img" />
+        <include src="components/button.html">
+          { "text": "Try For Free", "class":"hero__btn btn btn--secondary text text--light text--big" }
+        </include>
       </section>
     </main>
 
