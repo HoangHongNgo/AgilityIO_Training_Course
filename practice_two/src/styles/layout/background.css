@@ -17,9 +17,10 @@
 
 .background--mobile {
   width: 100%;
+  min-height: 900px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .background--mobile {
     display: none;
   }
