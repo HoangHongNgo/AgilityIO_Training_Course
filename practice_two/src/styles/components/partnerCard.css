@@ -1,0 +1,23 @@
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  width: 238px;
+
+  transition: transform 0.2s ease;
+}
+
+.partnerCard:hover {
+  transform: scale(1.1);
+}
+
+.partnerCard > img {
+  width: 122px;
+  height: 123px;
+}
