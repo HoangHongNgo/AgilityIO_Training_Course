@@ -42,7 +42,7 @@
     display: inline;
   }
   .hero__title__sub {
-    text-align: left;
+    text-align: left !important;
   }
   .hero {
     padding: 114px 0px;
