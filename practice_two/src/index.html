@@ -36,7 +36,9 @@
           </ul>
         </nav>
         <div class="subscribe-form">
-          <input class="subscribe-form__input input text" type="text" placeholder="Your Email" />
+          <include src="components/input.html"
+            >{"placeholder": "Your Email", "class": "subscribe-form__input input text"}</include
+          >
           <button class="subscribe-form__subcribe-btn btn btn--light text text--primary text--small" type="button">
             Subcribe
           </button>
@@ -126,8 +128,10 @@
         <div class="cta__form">
           <h3 class="text text--light text--center">Subscribe to our Newsletter</h3>
           <p class="text text--light text--center">Available exclusivery on Figmaland</p>
-          <input type="text" class="input" placeholder="Your Email" />
-          <button class="btn btn--primary text text--light text-small">Subcribe</button>
+          <include src="components/input.html">{"placeholder": "Your Email", "class": "input"}</include>
+          <include src="components/button.html">
+            { "text": "Subcribe", "class":"btn btn--primary text text--light text--small" }
+          </include>
         </div>
       </section>
     </main>
