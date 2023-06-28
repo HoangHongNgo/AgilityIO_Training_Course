@@ -21,27 +21,25 @@
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
-  .subscribe-form {
-    display: none;
-    flex-shrink: 1;
-  }
+.subscribe-form {
+  display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .header {
     padding: 30px;
   }
   .header__right {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 44px;
     width: 100%;
     max-width: 892px;
-    flex-shrink: 1;
-    justify-content: space-between;
   }
+}
 
+@media (min-width: 1200px) {
   .subscribe-form {
     display: flex;
     flex-wrap: nowrap;
@@ -50,7 +48,7 @@
   }
 
   .subscribe-form__input {
-    box-sizing: border-box;
+    flex: 0 1 auto;
     width: 273px;
     padding: 19px 39px;
   }

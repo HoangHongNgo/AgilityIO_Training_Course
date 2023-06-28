@@ -10,7 +10,8 @@
 
 .feature__title {
   margin-top: 106px;
-  width: 318px;
+  width: 80%;
+  max-width: 318px;
   display: flex;
   flex-direction: column;
   gap: 17px;

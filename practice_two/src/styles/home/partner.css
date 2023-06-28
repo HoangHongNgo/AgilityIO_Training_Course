@@ -15,7 +15,8 @@
 }
 
 .partner__title {
-  width: 298px;
+  width: 80%;
+  max-width: 298px;
 
   display: flex;
   flex-direction: column;
