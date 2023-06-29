@@ -193,17 +193,47 @@
           <h4 class="text text--light text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
         </div>
         <include src="components/contact-social.html"></include>
-        <include src="components/contact-info.html"></include>
+        <include src="components/contact-info.html">{"color":"light"}</include>
         <form class="contact__form">
           <p class="text text--grey text--center">Contact us</p>
           <input type="text" class="contact__form__input input" placeholder="Your Name" />
           <input type="text" class="contact__form__input input" placeholder="Your Email" />
           <textarea cols="30" rows="10" class="contact__form__textarea text" placeholder="Your Message"></textarea>
-          <button class="contact__form__btn btn btn--primary text text--light text--light">Send</button>
+          <include src="components/button.html">{"text":"Send", "class":"contact__form__btn btn btn--primary text text--light text--light"}</include>
         </form>
       </section>
       <!-- End Contact Section -->
     </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer__page">
+        <h3 class="text text--dark">Pages</h3>
+        <ul class="footer__page___list">
+          <li><a href="" class="text text--dark">Eleanor Edwards</a></li>
+          <li><a href="" class="text text--dark">Ted Robertson</a></li>
+          <li><a href="" class="text text--dark">Annette Russell</a></li>
+          <li><a href="" class="text text--dark">Jennie Mckinney</a></li>
+          <li><a href="" class="text text--dark">Gloria Richards</a></li>
+        </ul>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.1397434389835!2d-149.8646000229361!3d61.1503321755469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c899d638f6b8b9%3A0x8001486daef0fbc!2s6386%20Spring%20St%2C%20Anchorage%2C%20AK%2099518%2C%20USA!5e0!3m2!1sen!2s!4v1686882689691!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer__contact">
+        <include src="components/contact-info.html">{"color":"gray"}</include>
+        <include src="components/contact-social.html"></include>
+      </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Dropdown script -->
     <script src="js/dropdown.js"></script>

@@ -9,7 +9,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar__menu {
     position: absolute;
     display: none;
