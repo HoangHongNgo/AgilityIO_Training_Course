@@ -59,5 +59,6 @@
 
   .footer__map {
     max-width: 472px;
+    aspect-ratio: 1.9;
   }
 }
