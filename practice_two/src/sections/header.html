@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header__logo">
+    <a href="">
+      <img src="assets/images/header/logo.png" alt="Figma Land" />
+    </a>
+  </div>
+  <div class="header__right">
+    <include src="../components/navbar.html"></include>
+    <form class="subscribe-form">
+      <include src="components/input.html">{"placeholder": "Your Email", "class": "subscribe-form__input input text"}</include>
+      <include src="components/button.html"
+        >{"text":"Subcribe", "class":"subscribe-form__subcribe-btn btn btn--light text text--primary text--small"}</include
+      >
+    </form>
+  </div>
+</header>
