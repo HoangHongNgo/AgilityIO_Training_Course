@@ -72,8 +72,8 @@
   .hero__btn {
     grid-area: button;
     align-self: start;
-    color: var(--secondary-color);
-    background-color: var(--light-color);
+    color: var(--secondary-color) !important;
+    background-color: var(--light-color) !important;
   }
 }
 

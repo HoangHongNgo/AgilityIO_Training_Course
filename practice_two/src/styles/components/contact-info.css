@@ -1,0 +1,29 @@
+.contact-info {
+  grid-area: info;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 90%;
+  max-width: 264px;
+}
+
+.contact-info__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  transition: transform 0.2s ease;
+}
+
+.contact-info__row:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  .contact-info {
+    justify-self: start;
+    align-self: end;
+  }
+}
