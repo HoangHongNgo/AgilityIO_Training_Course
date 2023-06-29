@@ -154,14 +154,9 @@
             Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
           </h4>
           <div class="testimonial__client">
-            <img src="assets/images/testimonial/avatar--mobile.png" alt="client's avatar" class="testimonial__client__avatar" />
             <picture>
-              <source
-                media="(min-width:992px)"
-                srcset="assets/images/testimonial/avatar--desktop.png"
-                class="testimonial__client__avatar"
-              />
-              <source media="(min-width:0px)" srcset="assets/images/testimonial/avatar--mobile.png" class="testimonial__client__avatar" />
+              <source media="(min-width: 992px)" srcset="assets/images/testimonial/avatar--desktop.png" />
+              <img src="assets/images/testimonial/avatar--mobile.png" class="testimonial__client__avatar" alt="client's avatar" />
             </picture>
             <div class="testimonial__client__information">
               <h5 class="text text--gray">Organize across</h5>
@@ -174,6 +169,22 @@
         >
       </section>
       <!-- End Testimonials Section -->
+
+      <!-- Start Pricing Section -->
+      <section class="pricing">
+        <div class="pricing__title">
+          <h2 class="pricing__title__main text text--dark text--center">Pricing</h2>
+          <h4 class="pricing__title__sub text text--gray text--center">
+            Most calendars are designed for teams. Slate is designed for freelancers
+          </h4>
+        </div>
+        <ul class="pricing__pricing-list">
+          <include src="components/pricingCard.html"> {"highlight":"", "type":"Free", "price":"0"} </include>
+          <include src="components/pricingCard.html"> {"highlight":"", "type":"STANDARD", "price":"10"} </include>
+          <include src="components/pricingCard.html"> {"highlight":"highlight", "type":"BUSINESS", "price":"99"} </include>
+        </ul>
+      </section>
+      <!-- End Pricing Section -->
     </main>
 
     <!-- Dropdown script -->

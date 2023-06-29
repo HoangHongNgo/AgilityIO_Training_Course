@@ -76,3 +76,9 @@
     background-color: var(--light-color);
   }
 }
+
+@media (min-width: 1400px) {
+  .hero__img {
+    justify-self: end;
+  }
+}
