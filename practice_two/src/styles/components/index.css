@@ -1,5 +1,8 @@
 @import "button.css";
 @import "input.css";
-@import "partnerCard.css";
+@import "partner-card.css";
 @import "navbar.css";
-@import "pricingCard.css";
+@import "pricing-card.css";
+@import "contact-social.css";
+@import "contact-info.css";
+@import "feature-card.css";

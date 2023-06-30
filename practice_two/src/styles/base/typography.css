@@ -98,6 +98,17 @@ h5 {
   color: var(--gray-color);
 }
 
+.text--black {
+  color: var(--black-color);
+}
+
+.text--xs {
+  font-weight: var(--fw-light);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
 .text--small {
   font-weight: var(--fw-regular);
   font-size: 16px;
