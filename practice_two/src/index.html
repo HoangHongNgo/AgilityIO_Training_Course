@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Document</title>
+    <title>Figma Land</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -18,7 +18,7 @@
       <div class="header__right">
         <include src="components/navbar.html"></include>
         <form class="subscribe-form">
-          <include src="components/input.html">{"placeholder": "Your Email", "class": "subscribe-form__input input text"}</include>
+          <include src="components/input.html">{"placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs"}</include>
           <include src="components/button.html"
             >{"text":"Subcribe", "class":"subscribe-form__subcribe-btn btn btn--light text text--primary text--small"}</include
           >
@@ -28,10 +28,13 @@
     <!-- End Header -->
 
     <main class="content">
+
       <!-- Start background -->
       <div class="background">
-        <img class="background--mobile" src="assets/images/hero/background-mobile.png" alt="mobile background" />
-        <img class="background--desktop" src="assets/images/hero/background-desktop.png" alt="desktop background" />
+        <picture >
+          <source media="(min-width:576px)" srcset="assets/images/hero/background-desktop.png">
+          <img src="assets/images/hero/background-mobile.png" alt="background" class="background__image">
+        </picture>
       </div>
       <!-- End background -->
 
@@ -56,42 +59,12 @@
         <div class="feature__title">
           <h3 class="text text--dark text--center">At your fingertips</h3>
           <h2 class="text text--dark text--center">Features</h2>
-          <h4 class="text text--dark text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+          <h4 class="text text--gray text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
         </div>
         <div class="feature__list">
-          <li class="feature__item">
-            <div class="feature__item__title">
-              <div class="feature__item__circle">
-                <img src="assets/icons/feature/icon_1.svg" alt="icon" />
-              </div>
-              <h3 class="text text--dark">The best products start with Sketch</h3>
-            </div>
-            <p class="feature__item__detail text text--gray">
-              Slate helps you see how many more days you need to work to reach your financial goal.
-            </p>
-          </li>
-          <li class="feature__item">
-            <div class="feature__item__title">
-              <div class="feature__item__circle">
-                <img src="assets/icons/feature/icon_2.svg" alt="icon" />
-              </div>
-              <h3 class="text text--dark">The best products start with Sketch</h3>
-            </div>
-            <p class="feature__item__detail text text--gray">
-              Slate helps you see how many more days you need to work to reach your financial goal.
-            </p>
-          </li>
-          <li class="feature__item">
-            <div class="feature__item__title">
-              <div class="feature__item__circle">
-                <img src="assets/icons/feature/icon_3.svg" alt="icon" />
-              </div>
-              <h3 class="text text--dark">The best products start with Sketch</h3>
-            </div>
-            <p class="feature__item__detail text text--gray">
-              Slate helps you see how many more days you need to work to reach your financial goal.
-            </p>
-          </li>
+          <include src="components/feature-card.html">{"icon":"icon_1.svg"}</include>
+          <include src="components/feature-card.html">{"icon":"icon_2.svg"}</include>
+          <include src="components/feature-card.html">{"icon":"icon_3.svg"}</include>
         </div>
       </section>
       <!-- End Feature Section -->
@@ -119,7 +92,7 @@
         <div class="cta__form">
           <h3 class="text text--light text--center">Subscribe to our Newsletter</h3>
           <p class="text text--light text--center">Available exclusivery on Figmaland</p>
-          <include src="components/input.html">{"placeholder": "Your Email", "class": "input"}</include>
+          <include src="components/input.html">{"placeholder": "Your Email", "class": "input text text--black text--xs"}</include>
           <include src="components/button.html"> { "text": "Subcribe", "class":"btn btn--primary text text--light text--small" } </include>
         </div>
       </section>
@@ -132,19 +105,108 @@
           <h4 class="text text--gray text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
         </div>
         <ul class="partner__list">
-          <include src="components/partnerCard.html">{"logo":"logo_apiary"}</include>
-          <include src="components/partnerCard.html">{"logo":"logo_android"}</include>
-          <include src="components/partnerCard.html">{"logo":"logo_basecamp"}</include>
-          <include src="components/partnerCard.html">{"logo":"logo_basecamp"}</include>
-          <include src="components/partnerCard.html">{"logo":"logo_airbnb"}</include>
-          <include src="components/partnerCard.html">{"logo":"logo_apple"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_apiary"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_android"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_basecamp"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_basecamp"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_airbnb"}</include>
+          <include src="components/partner-card.html">{"logo":"logo_apple"}</include>
         </ul>
         <include src="components/button.html">
           {"text":"Try For Free", "class":"partner__btn btn btn--secondary text text--light text--big"}
         </include>
       </section>
       <!-- End Partner Section -->
+
+      <!-- Start Testimonials Section -->
+      <section class="testimonial">
+        <h2 class="testimonial__title text text--dark text--center">Testimonials</h2>
+        <div class="testtimonial__feedback">
+          <img src="assets/images/testimonial/dropbox_logo.png" alt="dropbox logo" class="testimonial__logo" />
+          <h4 class="testimonial__message text text--gray text--center">
+            Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+          </h4>
+          <div class="testimonial__client">
+            <picture>
+              <source media="(min-width: 992px)" srcset="assets/images/testimonial/avatar--desktop.png" />
+              <img src="assets/images/testimonial/avatar--mobile.png" class="testimonial__client__avatar" alt="client's avatar" />
+            </picture>
+            <div class="testimonial__client__information">
+              <h5 class="text text--gray">Organize across</h5>
+              <a href="" class="text text--dark">Ui designer</a>
+            </div>
+          </div>
+        </div>
+        <include src="components/button.html"
+          >{"text" : "More Testimonilas", "class" : "testimonial__btn btn btn--secondary text text--light text--big"}</include
+        >
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- Start Pricing Section -->
+      <section class="pricing">
+        <div class="pricing__title">
+          <h2 class="pricing__title__main text text--dark text--center">Pricing</h2>
+          <h4 class="pricing__title__sub text text--gray text--center">
+            Most calendars are designed for teams. Slate is designed for freelancers
+          </h4>
+        </div>
+        <ul class="pricing__pricing-list">
+          <include src="components/pricing-card.html"> {"highlight":"", "type":"Free", "price":"0"} </include>
+          <include src="components/pricing-card.html"> {"highlight":"", "type":"STANDARD", "price":"10"} </include>
+          <include src="components/pricing-card.html"> {"highlight":"highlight", "type":"BUSINESS", "price":"99"} </include>
+        </ul>
+      </section>
+      <!-- End Pricing Section -->
+
+      <!-- Start Contact Section -->
+      <section class="contact">
+        <div class="contact__title">
+          <h2 class="text text--light text--center">Contact Us</h2>
+          <h4 class="text text--light text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+        </div>
+        <include src="components/contact-social.html"></include>
+        <include src="components/contact-info.html">{"color":"light"}</include>
+        <form class="contact__form">
+          <p class="text text--grey text--center">Contact us</p>
+          <include src="components/input.html">{"placeholder":"Your Name", "class":"contact__form__input input text text--black text--xs"}</include>
+          <include src="components/input.html">{"placeholder":"Your Email", "class":"contact__form__input input text text--black text--xs"}</include>
+          <textarea cols="30" rows="10" class="contact__form__textarea text text--black text--xs" placeholder="Your Message"></textarea>
+          <include src="components/button.html">{"text":"Send", "class":"contact__form__btn btn btn--primary text text--light text--light"}</include>
+        </form>
+      </section>
+      <!-- End Contact Section -->
     </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer__page">
+        <h3 class="text text--dark">Pages</h3>
+        <ul class="footer__page___list">
+          <li><a href="" class="text text--dark">Eleanor Edwards</a></li>
+          <li><a href="" class="text text--dark">Ted Robertson</a></li>
+          <li><a href="" class="text text--dark">Annette Russell</a></li>
+          <li><a href="" class="text text--dark">Jennie Mckinney</a></li>
+          <li><a href="" class="text text--dark">Gloria Richards</a></li>
+        </ul>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.1397434389835!2d-149.8646000229361!3d61.1503321755469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c899d638f6b8b9%3A0x8001486daef0fbc!2s6386%20Spring%20St%2C%20Anchorage%2C%20AK%2099518%2C%20USA!5e0!3m2!1sen!2s!4v1686882689691!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer__contact">
+        <include src="components/contact-info.html">{"color":"gray"}</include>
+        <include src="components/contact-social.html"></include>
+      </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Dropdown script -->
     <script src="js/dropdown.js"></script>
