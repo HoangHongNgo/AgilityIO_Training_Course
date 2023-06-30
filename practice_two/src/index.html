@@ -28,11 +28,13 @@
     <!-- End Header -->
 
     <main class="content">
-      <!-- Start background -->
       <div class="background">
-        <img class="background--mobile" src="assets/images/hero/background-mobile.png" alt="mobile background" />
-        <img class="background--desktop" src="assets/images/hero/background-desktop.png" alt="desktop background" />
+        <picture >
+          <source media="(min-width:576px)" srcset="assets/images/hero/background-desktop.png">
+          <img src="assets/images/hero/background-mobile.png" alt="background" class="background__image">
+        </picture>
       </div>
+      
       <!-- End background -->
 
       <!-- Start Hero Section -->
