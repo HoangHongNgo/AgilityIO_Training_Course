@@ -1,0 +1,56 @@
+/*------------------------------------*\
+  #CTA
+\*------------------------------------*/
+
+.cta {
+  width: 100%;
+  padding: 80px 0;
+  background: var(--bg-gradient-color);
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 69px;
+}
+
+.cta__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cta__form > input {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 353px;
+  padding: 19px 35px;
+  box-sizing: border-box;
+}
+
+.cta__form > button {
+  width: 100%;
+  max-width: 353px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+
+.cta__title__main--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cta__title__main--desktop {
+    display: block;
+  }
+  .cta__title__main--mobile {
+    display: none;
+  }
+}

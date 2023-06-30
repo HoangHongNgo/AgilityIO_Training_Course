@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  #SECOND-HERO
+\*------------------------------------*/
+
+.second-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 59px;
+
+  padding: 80px 20px;
+}
+
+.second-hero__title {
+  padding: 10px 0;
+  max-width: 298px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.second-hero__btn {
+  width: 236px;
+  height: 65px;
+}
+
+.second-hero__img {
+  width: 95%;
+  max-width: 1033px;
+
+  transition: transform 0.2s ease;
+}
+
+.second-hero__img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 992px) {
+  .second-hero {
+    padding: 110px 0 130px;
+    gap: 80px;
+  }
+}
