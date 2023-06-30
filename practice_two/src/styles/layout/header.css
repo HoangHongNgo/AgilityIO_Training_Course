@@ -1,0 +1,60 @@
+/*-----------------------------------------*\
+  #HEADER
+\*-----------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 16px;
+  width: 100%;
+}
+
+.header__logo {
+  padding: 10px;
+  flex-shrink: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  position: relative;
+}
+
+.subscribe-form {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 30px;
+  }
+  .header__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 44px;
+    width: 100%;
+    max-width: 892px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .subscribe-form__input {
+    flex: 0 1 auto;
+    width: 273px;
+    padding: 19px 39px;
+  }
+
+  .subscribe-form__subcribe-btn {
+    width: 141px;
+    height: 54px;
+  }
+}

@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #INPUT
+\*------------------------------------*/
+
+.input {
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+  height: 54px;
+
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+}
