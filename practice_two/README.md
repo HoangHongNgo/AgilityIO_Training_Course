@@ -75,7 +75,7 @@ cd practice-two
 npm install
 ```
 
-- Run
+- Step 06: Run
 
 ```bash
 npx parcel src/index.html
