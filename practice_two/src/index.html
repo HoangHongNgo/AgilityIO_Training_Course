@@ -18,7 +18,7 @@
       <div class="header__right">
         <include src="components/navbar.html"></include>
         <form class="subscribe-form">
-          <include src="components/input.html">{"placeholder": "Your Email", "class": "subscribe-form__input input text"}</include>
+          <include src="components/input.html">{"placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs"}</include>
           <include src="components/button.html"
             >{"text":"Subcribe", "class":"subscribe-form__subcribe-btn btn btn--light text text--primary text--small"}</include
           >
@@ -28,13 +28,14 @@
     <!-- End Header -->
 
     <main class="content">
+
+      <!-- Start background -->
       <div class="background">
         <picture >
           <source media="(min-width:576px)" srcset="assets/images/hero/background-desktop.png">
           <img src="assets/images/hero/background-mobile.png" alt="background" class="background__image">
         </picture>
       </div>
-      
       <!-- End background -->
 
       <!-- Start Hero Section -->
@@ -91,7 +92,7 @@
         <div class="cta__form">
           <h3 class="text text--light text--center">Subscribe to our Newsletter</h3>
           <p class="text text--light text--center">Available exclusivery on Figmaland</p>
-          <include src="components/input.html">{"placeholder": "Your Email", "class": "input"}</include>
+          <include src="components/input.html">{"placeholder": "Your Email", "class": "input text text--black text--xs"}</include>
           <include src="components/button.html"> { "text": "Subcribe", "class":"btn btn--primary text text--light text--small" } </include>
         </div>
       </section>
@@ -168,9 +169,9 @@
         <include src="components/contact-info.html">{"color":"light"}</include>
         <form class="contact__form">
           <p class="text text--grey text--center">Contact us</p>
-          <input type="text" class="contact__form__input input" placeholder="Your Name" />
-          <input type="text" class="contact__form__input input" placeholder="Your Email" />
-          <textarea cols="30" rows="10" class="contact__form__textarea text" placeholder="Your Message"></textarea>
+          <include src="components/input.html">{"placeholder":"Your Name", "class":"contact__form__input input text text--black text--xs"}</include>
+          <include src="components/input.html">{"placeholder":"Your Email", "class":"contact__form__input input text text--black text--xs"}</include>
+          <textarea cols="30" rows="10" class="contact__form__textarea text text--black text--xs" placeholder="Your Message"></textarea>
           <include src="components/button.html">{"text":"Send", "class":"contact__form__btn btn btn--primary text text--light text--light"}</include>
         </form>
       </section>
