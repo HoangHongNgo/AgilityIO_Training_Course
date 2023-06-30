@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  #PRICING
+\*------------------------------------*/
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+
+  padding: 110px 0;
+}
+
+.pricing__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+
+.pricing__title__sub {
+  width: 90%;
+  max-width: 320px !important;
+}
+
+.pricing__pricing-list {
+  display: grid;
+  grid-template-columns: minmax(auto, 418.75px);
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 992px) {
+  .pricing__pricing-list {
+    grid-template-columns: repeat(3, minmax(auto, 335px));
+    grid-template-rows: auto;
+  }
+}

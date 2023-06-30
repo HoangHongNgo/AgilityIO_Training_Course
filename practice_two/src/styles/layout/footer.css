@@ -1,0 +1,64 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+.footer {
+  padding: 126px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+}
+
+.footer__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  flex: 0 1 186px;
+  min-width: 120px;
+  padding-top: 10px;
+}
+
+.footer__page___list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__map {
+  border-radius: 22px;
+  width: 100%;
+  max-width: 358px;
+  aspect-ratio: 1.4;
+  overflow: hidden;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer__page {
+    align-items: flex-start;
+  }
+
+  .footer__page___list {
+    align-items: flex-start;
+  }
+
+  .footer__map {
+    max-width: 472px;
+    aspect-ratio: 1.9;
+  }
+}
