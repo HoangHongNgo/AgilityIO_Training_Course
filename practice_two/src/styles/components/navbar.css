@@ -1,0 +1,84 @@
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  position: relative;
+}
+
+.navbar__menu {
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  top: 120%;
+  right: 0px;
+  background-color: var(--bg-light-color);
+
+  width: 125px;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.navbar__menu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.navbar__menu__item:hover {
+  background-color: #e5e5e5;
+}
+
+.navbar__menu.active {
+  display: flex;
+  opacity: 0.9;
+}
+
+.navbar__icon {
+  transition: transform 0.3s ease;
+}
+
+.navbar__icon.active {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 992px) {
+  .navbar__icon {
+    display: none;
+  }
+
+  .navbar__menu {
+    position: static;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41px;
+
+    width: auto;
+    height: auto;
+
+    background-color: inherit;
+  }
+
+  .navbar__menu__item > a {
+    color: var(--light-color);
+  }
+
+  .navbar__menu__item {
+    border-bottom: 0;
+  }
+
+  .navbar__menu__item:hover {
+    background-color: inherit;
+  }
+}

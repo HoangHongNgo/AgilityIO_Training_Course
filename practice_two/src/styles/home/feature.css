@@ -1,6 +1,6 @@
-/*-----------------------------------------*\
+/*------------------------------------*\
   #FEATURE
-\*-----------------------------------------*/
+\*------------------------------------*/
 .feature {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,8 @@
 
 .feature__title {
   margin-top: 106px;
-  width: 318px;
+  width: 80%;
+  max-width: 318px;
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -27,42 +28,6 @@
 
   padding: 18px 0px;
   margin-bottom: 80px;
-}
-
-.feature__item {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  gap: 20px;
-
-  max-width: 255px;
-  min-width: 200px;
-
-  transition: transform 0.2s ease;
-}
-
-.feature__item:hover {
-  transform: scale(1.1);
-}
-
-.feature__item__title {
-  display: flex;
-  align-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-
-.feature__item__circle {
-  width: 43px;
-  height: 43.5px;
-  background-color: var(--primary-color);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  border-radius: 50%;
 }
 
 @media (min-width: 992px) {

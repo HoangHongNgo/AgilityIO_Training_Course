@@ -1,6 +1,6 @@
-/*-----------------------------------------*\
+/*------------------------------------*\
   #HERO
-\*-----------------------------------------*/
+\*------------------------------------*/
 
 .hero {
   display: flex;
@@ -42,7 +42,7 @@
     display: inline;
   }
   .hero__title__sub {
-    text-align: left;
+    text-align: left !important;
   }
   .hero {
     padding: 114px 0px;
@@ -72,7 +72,13 @@
   .hero__btn {
     grid-area: button;
     align-self: start;
-    color: var(--secondary-color);
-    background-color: var(--light-color);
+    color: var(--secondary-color) !important;
+    background-color: var(--light-color) !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero__img {
+    justify-self: end;
   }
 }
