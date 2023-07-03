@@ -8,10 +8,17 @@
   background: var(--bg-gradient-color);
 
   display: flex;
+  justify-content: center;
+}
+
+.cta > .container {
+  display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   gap: 69px;
+
+  max-width: 540px;
 }
 
 .cta__title {

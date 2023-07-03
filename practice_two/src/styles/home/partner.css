@@ -3,15 +3,21 @@
 \*------------------------------------*/
 
 .partner {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 100px 0 50px;
+}
+
+.partner > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
   gap: 90px;
 
-  width: 100%;
-
-  padding: 100px 0 50px;
+  max-width: 780px;
 }
 
 .partner__title {
@@ -25,13 +31,9 @@
 }
 
 .partner__list {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3, 346px);
   row-gap: 30px;
 
   max-height: 1098px;
-
   overflow: hidden;
 }
 
@@ -42,21 +44,15 @@
 
 @media (min-width: 576px) {
   .partner__list {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, 346px);
-    row-gap: 70px;
     column-gap: 52px;
-
-    max-height: 762px;
   }
 }
 
 @media (min-width: 992px) {
-  .partner__list {
-    grid-template-columns: repeat(3, auto);
-    max-width: 818px;
-  }
   .partner {
     padding: 130px 0 80px;
+  }
+  .partner__list {
+    row-gap: 70px;
   }
 }

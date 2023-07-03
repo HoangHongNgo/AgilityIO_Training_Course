@@ -4,12 +4,14 @@
 
 .contact {
   padding: 150px 0;
+  background-color: var(--bg-dark-color);
+}
+
+.contact > .container {
   display: grid;
   grid-template-areas: "title" "social" "info" "form";
   row-gap: 50px;
   justify-items: center;
-
-  background-color: var(--bg-dark-color);
 }
 
 .contact__title {
@@ -85,7 +87,7 @@
 }
 
 @media (min-width: 992px) {
-  .contact {
+  .contact > .container {
     grid-template-areas: "title title" "form info" "form social";
     column-gap: 65px;
   }
