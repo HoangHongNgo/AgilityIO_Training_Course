@@ -25,6 +25,11 @@
 }
 
 .feature__list {
-  column-gap: 52px;
   row-gap: 75px;
+}
+
+@media (min-width: 992px) {
+  .feature__list {
+    column-gap: 52px;
+  }
 }
