@@ -3,12 +3,6 @@
 \*------------------------------------*/
 .footer {
   padding: 126px 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer > .container {
-  max-width: 1032px;
 }
 
 .footer .row {
@@ -20,10 +14,6 @@
   flex-direction: column;
   align-items: center;
   gap: 25px;
-
-  flex: 0 1 186px;
-  min-width: 120px;
-  padding-top: 10px;
 }
 
 .footer__page___list {

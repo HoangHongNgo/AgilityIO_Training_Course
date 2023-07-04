@@ -4,9 +4,6 @@
 
 .second-hero {
   padding: 80px 20px;
-
-  display: flex;
-  justify-content: center;
 }
 
 .second-hero > .container {
@@ -14,8 +11,6 @@
   flex-direction: column;
   align-items: center;
   gap: 59px;
-
-  max-width: 1033px;
 }
 
 .second-hero__title {

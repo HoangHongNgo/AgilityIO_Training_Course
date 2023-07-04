@@ -4,10 +4,6 @@
 
 .partner {
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-
   padding: 100px 0 50px;
 }
 
@@ -16,14 +12,11 @@
   flex-direction: column;
   align-items: center;
   gap: 90px;
-
-  max-width: 780px;
 }
 
 .partner__title {
-  width: 80%;
   max-width: 298px;
-
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -45,6 +38,8 @@
 @media (min-width: 576px) {
   .partner__list {
     column-gap: 52px;
+
+    overflow: visible;
   }
 }
 
@@ -54,5 +49,7 @@
   }
   .partner__list {
     row-gap: 70px;
+
+    overflow: visible;
   }
 }
