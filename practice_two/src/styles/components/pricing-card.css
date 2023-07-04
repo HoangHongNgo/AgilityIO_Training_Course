@@ -2,8 +2,8 @@
   #PRICING-CARD
 \*------------------------------------*/
 .pricing-card {
+  width: 100%;
   max-width: 335px;
-  width: 80%;
   height: 310px;
   box-sizing: border-box;
 

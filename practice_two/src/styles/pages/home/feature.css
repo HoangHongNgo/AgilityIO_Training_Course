@@ -2,15 +2,22 @@
   #FEATURE
 \*------------------------------------*/
 .feature {
+  padding: 106px 0 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
+
+  max-width: 869px;
 }
 
 .feature__title {
-  margin-top: 106px;
-  width: 80%;
+  width: 100%;
   max-width: 318px;
   display: flex;
   flex-direction: column;
@@ -18,21 +25,11 @@
 }
 
 .feature__list {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3, auto);
-  justify-content: center;
-  gap: 75px;
-
-  width: 100%;
-
-  padding: 18px 0px;
-  margin-bottom: 80px;
+  row-gap: 75px;
 }
 
 @media (min-width: 992px) {
   .feature__list {
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
+    column-gap: 52px;
   }
 }

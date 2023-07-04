@@ -32,7 +32,6 @@ practice-two
     |-- styles
       |-- base
       |-- components
-      |-- home
       |-- layout
       |-- pages
       |-- themes
