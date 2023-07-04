@@ -18,9 +18,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 44.8px;
+  gap: 44px;
 
-  padding: 15.2px 0;
+  padding: 15px 0;
 }
 
 .testimonial__logo {
