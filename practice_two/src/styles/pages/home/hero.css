@@ -10,7 +10,7 @@
 }
 
 .hero__title {
-  margin-top: 87px;
+  margin-top: 107px;
   width: 80%;
   max-width: 435px;
 
@@ -25,8 +25,12 @@
 }
 
 .hero__img {
+  position: relative;
+
   width: 90%;
-  max-width: 650px;
+  max-width: 950px;
+
+  box-shadow: 0px 9.860566139221191px 131.47421264648438px rgba(0, 0, 0, 0.23);
 }
 
 .hero__btn {
@@ -53,15 +57,17 @@
     grid-template-areas:
       "img title"
       "img button";
-    grid-template-columns: 1.3fr minmax(auto, 1fr);
+    grid-template-columns: 1.3fr 1fr;
     column-gap: 80px;
     row-gap: 60px;
   }
   .hero__img {
     grid-area: img;
     height: 530px;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     min-width: 650px;
+    justify-self: end;
   }
   .hero__title {
     grid-area: title;
@@ -78,6 +84,9 @@
 }
 
 @media (min-width: 1400px) {
+  .hero {
+    grid-template-columns: 1.7fr 1fr;
+  }
   .hero__img {
     justify-self: end;
   }
