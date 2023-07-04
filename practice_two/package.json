@@ -14,5 +14,10 @@
   },
   "dependencies": {
     "posthtml": "^0.16.6"
+  },
+  "prettier": {
+    "proseWrap": "never",
+    "printWidth": 140,
+    "htmlWhitespaceSensitivity": "strict"
   }
 }
