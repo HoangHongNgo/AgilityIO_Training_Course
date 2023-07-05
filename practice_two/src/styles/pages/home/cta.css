@@ -43,16 +43,3 @@
   height: 50px;
   margin-bottom: 24px;
 }
-
-/* .cta__title__main--desktop {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .cta__title__main--desktop {
-    display: block;
-  }
-  .cta__title__main--mobile {
-    display: none;
-  }
-} */
