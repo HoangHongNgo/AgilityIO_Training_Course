@@ -23,7 +23,7 @@
   gap: 27px;
 
   max-width: 318px;
-  width: 80%;
+  width: 90%;
   padding: 10px;
 }
 
@@ -31,14 +31,14 @@
   grid-area: form;
 
   width: 90%;
-  max-width: 400.72px;
-  height: 430.38px;
+  max-width: 400px;
+  height: 430px;
 
   padding: 26px 41px;
   box-sizing: border-box;
 
-  box-shadow: 0px 8.49823px 12.4205px rgba(0, 0, 0, 0.07);
-  border-radius: 13.0742px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 13px;
 
   background-color: var(--bg-light-color);
 
@@ -56,10 +56,10 @@
 
 .contact__form__input {
   width: 100%;
-  max-width: 318.72px;
-  height: 35.84px;
+  max-width: 320px;
+  height: 36px;
 
-  padding: 19px 13.0742px;
+  padding: 19px 13px;
 
   background: #f5f5f5;
 
@@ -69,20 +69,20 @@
 
 .contact__form__textarea {
   width: 100%;
-  max-width: 318.72px;
-  height: 126.17px;
+  max-width: 320px;
+  height: 126px;
   resize: none;
 
-  padding: 15.0353px 13.0742px;
+  padding: 15px 13px;
   box-sizing: border-box;
 
   background: #f5f5f5;
-  border: 0.65371px solid #e8e8e8;
+  border: 1px solid #e8e8e8;
 }
 
 .contact__form__btn {
   width: 50%;
-  max-width: 94.79px;
+  max-width: 95px;
   height: 70px;
 }
 

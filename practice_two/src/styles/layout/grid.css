@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .container {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .row {
@@ -47,6 +48,10 @@
 }
 
 @media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
   .col-sm-1 {
     grid-column: auto / span 1;
   }
@@ -80,7 +85,21 @@
   }
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
 @media (min-width: 992px) {
+  .container--small {
+    max-width: 869px;
+  }
+
+  .container--big {
+    max-width: 1105px;
+  }
+
   .col-lg-1 {
     grid-column: auto / span 1;
   }

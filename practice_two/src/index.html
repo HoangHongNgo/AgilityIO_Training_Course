@@ -19,10 +19,10 @@
         <include src="components/navbar.html"></include>
         <form class="subscribe-form">
           <include src="components/input.html">
-            {"placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs"}
+            { "placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs" }
           </include>
           <include src="components/button.html">
-            {"text":"Subcribe", "class":"subscribe-form__subcribe-btn btn btn--light text text--primary text--small"}
+            { "text": "Subcribe", "class": "subscribe-form__subcribe-btn btn btn--light text text--primary text--small" }
           </include>
         </form>
       </div>
@@ -50,23 +50,23 @@
         </div>
         <img src="assets/images/hero/browser.png" alt="hero image" class="hero__img" />
         <include src="components/button.html">
-          { "text": "Try For Free", "class":"hero__btn btn btn--secondary text text--light text--big" }
+          { "text": "Try For Free", "class": "hero__btn btn btn--secondary text text--light text--big" }
         </include>
       </section>
       <!-- End Hero Section -->
 
       <!-- Start Feature Section -->
       <section class="feature">
-        <div class="container">
+        <div class="container container--small">
           <div class="feature__title">
             <h3 class="text text--dark text--center">At your fingertips</h3>
             <h2 class="text text--dark text--center">Features</h2>
             <h4 class="text text--gray text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
           </div>
           <ul class="row feature__list">
-            <include src="components/feature-card.html">{"icon":"icon_1.svg"}</include>
-            <include src="components/feature-card.html">{"icon":"icon_2.svg"}</include>
-            <include src="components/feature-card.html">{"icon":"icon_3.svg"}</include>
+            <include src="components/feature-card.html"> { "icon": "assets/icons/feature/icon_1.svg" } </include>
+            <include src="components/feature-card.html"> { "icon": "assets/icons/feature/icon_2.svg" } </include>
+            <include src="components/feature-card.html"> { "icon": "assets/icons/feature/icon_3.svg" } </include>
           </ul>
         </div>
       </section>
@@ -74,13 +74,13 @@
 
       <!-- Start Second hero Section -->
       <section class="second-hero">
-        <div class="container">
+        <div class="container container--big">
           <div class="second-hero__title">
             <h2 class="text text--dark text--center">Lightning fast prototyping</h2>
             <h4 class="text text--gray text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
           </div>
           <include src="components/button.html">
-            { "text": "Try For Free", "class":"second-hero__btn btn btn--secondary text text--light text--big" }
+            { "text": "Try For Free", "class": "second-hero__btn btn btn--secondary text text--light text--big" }
           </include>
           <img class="second-hero__img" src="assets/images/second-hero/macbook.png" alt="preview product image" />
         </div>
@@ -89,17 +89,19 @@
 
       <!-- Start CTA Section -->
       <section class="cta">
-        <div class="container">
+        <div class="container container--small">
           <div class="cta__title">
             <h3 class="text text--light text--center">At your fingertips</h3>
-            <h2 class="cta__title__main--mobile text text--light text--center">Newsletter</h2>
-            <h2 class="cta__title__main--desktop text text--light text--center">Lightning fast prototyping</h2>
+            <h2 class="cta__title__main--mobile desktop-hide text text--light text--center">Newsletter</h2>
+            <h2 class="cta__title__main--desktop mobile-hide text text--light text--center">Lightning fast prototyping</h2>
           </div>
           <div class="cta__form">
             <h3 class="text text--light text--center">Subscribe to our Newsletter</h3>
             <p class="text text--light text--center">Available exclusivery on Figmaland</p>
-            <include src="components/input.html">{"placeholder": "Your Email", "class": "input text text--black text--xs"}</include>
-            <include src="components/button.html">{ "text": "Subcribe", "class":"btn btn--primary text text--light text--small" }</include>
+            <include src="components/input.html">{ "placeholder": "Your Email", "class": "input text text--black text--xs" }</include>
+            <include src="components/button.html">
+              { "text": "Subcribe", "class": "btn btn--primary text text--light text--small" }
+            </include>
           </div>
         </div>
       </section>
@@ -107,21 +109,21 @@
 
       <!-- Start Partner Section -->
       <section class="partner">
-        <div class="container">
+        <div class="container container--small">
           <div class="partner__title">
             <h2 class="text text--dark text--center">Partners</h2>
             <h4 class="text text--gray text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
           </div>
           <ul class="partner__list row">
-            <include src="components/partner-card.html">{"logo":"logo_apiary"}</include>
-            <include src="components/partner-card.html">{"logo":"logo_android"}</include>
-            <include src="components/partner-card.html">{"logo":"logo_basecamp"}</include>
-            <include src="components/partner-card.html">{"logo":"logo_basecamp"}</include>
-            <include src="components/partner-card.html">{"logo":"logo_airbnb"}</include>
-            <include src="components/partner-card.html">{"logo":"logo_apple"}</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_apiary.svg" }</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_android.svg" }</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_basecamp.svg" }</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_basecamp.svg" }</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_airbnb.svg" }</include>
+            <include src="components/partner-card.html">{ "logo": "assets/images/partner/logo_apple.svg" }</include>
           </ul>
           <include src="components/button.html">
-            { "text":"Try For Free", "class":"partner__btn btn btn--secondary text text--light text--big" }
+            { "text": "Try For Free", "class": "partner__btn btn btn--secondary text text--light text--big" }
           </include>
         </div>
       </section>
@@ -129,7 +131,7 @@
 
       <!-- Start Testimonials Section -->
       <section class="testimonial">
-        <div class="container">
+        <div class="container container--small">
           <h2 class="testimonial__title text text--dark text--center">Testimonials</h2>
           <div class="testtimonial__feedback">
             <img src="assets/images/testimonial/dropbox_logo.png" alt="dropbox logo" class="testimonial__logo" />
@@ -148,7 +150,7 @@
             </div>
           </div>
           <include src="components/button.html">
-            { "text" : "More Testimonilas", "class" : "testimonial__btn btn btn--secondary text text--light text--big" }
+            { "text": "More Testimonilas", "class": "testimonial__btn btn btn--secondary text text--light text--big" }
           </include>
         </div>
       </section>
@@ -156,7 +158,7 @@
 
       <!-- Start Pricing Section -->
       <section class="pricing">
-        <div class="container">
+        <div class="container container--big">
           <div class="pricing__title">
             <h2 class="pricing__title__main text text--dark text--center">Pricing</h2>
             <h4 class="pricing__title__sub text text--gray text--center">
@@ -164,9 +166,11 @@
             </h4>
           </div>
           <ul class="pricing__pricing-list row">
-            <include src="components/pricing-card.html">{"highlight":"", "type":"Free", "price":"0"}</include>
-            <include src="components/pricing-card.html">{"highlight":"", "type":"STANDARD", "price":"10"}</include>
-            <include src="components/pricing-card.html">{"highlight":"pricing-card--highlight", "type":"BUSINESS", "price":"99"}</include>
+            <include src="components/pricing-card.html">{ "highlight": "", "type": "Free", "price": "0" }</include>
+            <include src="components/pricing-card.html">{ "highlight": "", "type": "STANDARD", "price": "10" }</include>
+            <include src="components/pricing-card.html">
+              { "highlight": "pricing-card--highlight", "type": "BUSINESS", "price": "99" }
+            </include>
           </ul>
         </div>
       </section>
@@ -174,24 +178,24 @@
 
       <!-- Start Contact Section -->
       <section class="contact">
-        <div class="container">
+        <div class="container container--big">
           <div class="contact__title">
             <h2 class="text text--light text--center">Contact Us</h2>
             <h4 class="text text--light text--center">Most calendars are designed for teams. Slate is designed for freelancers</h4>
           </div>
           <include src="components/contact-social.html"></include>
-          <include src="components/contact-info.html">{"color":"light"}</include>
+          <include src="components/contact-info.html">{ "color": "text--light" }</include>
           <form class="contact__form">
             <p class="text text--grey text--center">Contact us</p>
             <include src="components/input.html">
-              {"placeholder":"Your Name", "class":"contact__form__input input text text--black text--xs"}
+              { "placeholder": "Your Name", "class": "contact__form__input input text text--black text--xs" }
             </include>
             <include src="components/input.html">
-              {"placeholder":"Your Email", "class":"contact__form__input input text text--black text--xs"}
+              { "placeholder": "Your Email", "class": "contact__form__input input text text--black text--xs" }
             </include>
             <textarea cols="30" rows="10" class="contact__form__textarea text text--black text--xs" placeholder="Your Message"></textarea>
             <include src="components/button.html">
-              {"text":"Send", "class":"contact__form__btn btn btn--primary text text--light text--light"}
+              { "text": "Send", "class": "contact__form__btn btn btn--primary text text--light text--light" }
             </include>
           </form>
         </div>
@@ -201,7 +205,7 @@
 
     <!-- Start Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container container--big">
         <div class="row">
           <div class="footer__page col-12 col-lg-3">
             <h3 class="text text--dark">Pages</h3>
@@ -234,7 +238,7 @@
             ></iframe>
           </div>
           <div class="footer__contact col-12 col-lg-3">
-            <include src="components/contact-info.html">{"color":"gray"}</include>
+            <include src="components/contact-info.html">{ "color": "text--gray" }</include>
             <include src="components/contact-social.html"></include>
           </div>
         </div>

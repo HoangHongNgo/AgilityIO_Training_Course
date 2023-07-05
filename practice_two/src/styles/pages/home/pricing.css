@@ -3,16 +3,10 @@
 \*------------------------------------*/
 
 .pricing {
-  display: flex;
-  justify-content: center;
-
   padding: 110px 0;
 }
 
 .pricing > .container {
-  max-width: 1105px;
-  width: 90%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +18,11 @@
   flex-direction: column;
   align-items: center;
   gap: 27px;
+
+  width: 90%;
 }
 
 .pricing__title__sub {
-  width: 90%;
   max-width: 320px !important;
 }
 
