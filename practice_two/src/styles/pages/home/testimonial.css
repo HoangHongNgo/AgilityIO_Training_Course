@@ -49,6 +49,11 @@
   border-radius: 50%;
 }
 
+.testimonial__client__avatar > img {
+  width: 100%;
+  height: 100%;
+}
+
 .testimonial__client__information {
   display: flex;
   flex-direction: column;
