@@ -5,12 +5,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 17px 16px;
   width: 100%;
 }
 
 .header__logo {
+  width: 186px;
+  height: 58px;
   padding: 10px;
+
   flex-shrink: 1;
 }
 
