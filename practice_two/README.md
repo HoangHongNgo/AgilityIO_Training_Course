@@ -17,7 +17,17 @@
 
 - 1 dev: Hoang Ngo
 
-## Folder structure
+## Develop Environment:
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- HTML5 & CSS3
+- [Github](https://github.com/)
+
+## Deployment:
+
+- [Netlify](https://feature-practice-two--chic-taiyaki-eb1121.netlify.app/)
+
+## Folder structure:
 
 practice-two
 
