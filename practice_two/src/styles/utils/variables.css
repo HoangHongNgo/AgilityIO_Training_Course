@@ -9,6 +9,11 @@
   --fw-regular: 500;
   --fw-light: 400;
 
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-small-lg: 869px;
+  --container-big-lg: 1105px;
+
   --primary-color: #ef2779;
   --secondary-color: #38a3f1;
   --light-color: #ffffff;
