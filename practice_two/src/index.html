@@ -19,7 +19,7 @@
         <include src="components/navbar.html"></include>
         <form class="subscribe-form">
           <include src="components/input.html">
-            { "placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs" }
+            { "type": "email", "placeholder": "Your Email", "class": "subscribe-form__input input text text--black text--xs" }
           </include>
           <include src="components/button.html">
             { "text": "Subcribe", "class": "subscribe-form__subcribe-btn btn btn--light text text--primary text--small" }
@@ -98,7 +98,9 @@
           <div class="cta__form">
             <h3 class="text text--light text--center">Subscribe to our Newsletter</h3>
             <p class="text text--light text--center">Available exclusivery on Figmaland</p>
-            <include src="components/input.html">{ "placeholder": "Your Email", "class": "input text text--black text--xs" }</include>
+            <include src="components/input.html"
+              >{ "type": "email", "placeholder": "Your Email", "class": "input text text--black text--xs" }</include
+            >
             <include src="components/button.html">
               { "text": "Subcribe", "class": "btn btn--primary text text--light text--small" }
             </include>
@@ -188,10 +190,10 @@
           <form class="contact__form">
             <p class="text text--grey text--center">Contact us</p>
             <include src="components/input.html">
-              { "placeholder": "Your Name", "class": "contact__form__input input text text--black text--xs" }
+              { "type": "text", "placeholder": "Your Name", "class": "contact__form__input input text text--black text--xs" }
             </include>
             <include src="components/input.html">
-              { "placeholder": "Your Email", "class": "contact__form__input input text text--black text--xs" }
+              { "type": "email", "placeholder": "Your Email", "class": "contact__form__input input text text--black text--xs" }
             </include>
             <textarea cols="30" rows="10" class="contact__form__textarea text text--black text--xs" placeholder="Your Message"></textarea>
             <include src="components/button.html">
