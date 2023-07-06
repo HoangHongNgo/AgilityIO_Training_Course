@@ -12,7 +12,8 @@
   padding: 10px;
   box-sizing: border-box;
 
-  width: 238px;
+  width: 100%;
+  max-width: 238px;
 
   transition: transform 0.2s ease;
 }
