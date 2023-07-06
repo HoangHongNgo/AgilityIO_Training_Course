@@ -102,6 +102,13 @@ h5 {
   color: var(--black-color);
 }
 
+.text--xxs {
+  font-weight: var(--fw-bold);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
 .text--xs {
   font-weight: var(--fw-light);
   font-size: 14px;
