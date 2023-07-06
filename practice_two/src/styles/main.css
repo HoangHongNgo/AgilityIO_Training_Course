@@ -1,5 +1,5 @@
-@import "base/index.css";
-@import "components/index.css";
-@import "layout/index.css";
 @import "utils/index.css";
+@import "base/index.css";
+@import "layout/index.css";
+@import "components/index.css";
 @import "pages/index.css";
