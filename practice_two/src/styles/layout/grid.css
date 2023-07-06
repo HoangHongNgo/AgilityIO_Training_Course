@@ -49,7 +49,7 @@
 
 @media (min-width: 576px) {
   .container {
-    width: var(--container-sm);
+    max-width: var(--container-sm);
   }
 
   .col-sm-1 {
@@ -87,17 +87,17 @@
 
 @media (min-width: 768px) {
   .container {
-    width: var(--container-md);
+    max-width: var(--container-md);
   }
 }
 
 @media (min-width: 992px) {
   .container--small {
-    width: var(--container-small-lg);
+    max-width: var(--container-small-lg);
   }
 
   .container--big {
-    width: var(--container-big-lg);
+    max-width: var(--container-big-lg);
   }
 
   .col-lg-1 {
