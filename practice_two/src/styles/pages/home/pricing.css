@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #PRICING
+\*------------------------------------*/
+
+.pricing {
+  padding: 110px 0;
+}
+
+.pricing > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+
+.pricing__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+
+  width: 90%;
+}
+
+.pricing__title__sub {
+  max-width: 320px !important;
+}
+
+.pricing__pricing-list {
+  row-gap: 50px;
+}
+
+@media (min-width: 992px) {
+  .pricing__pricing-list {
+    column-gap: 50px;
+  }
+}
