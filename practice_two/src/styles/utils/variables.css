@@ -9,12 +9,21 @@
   --fw-regular: 500;
   --fw-light: 400;
 
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-small-lg: 869px;
+  --container-big-lg: 1105px;
+
   --primary-color: #ef2779;
   --secondary-color: #38a3f1;
   --light-color: #ffffff;
   --dark-color: #252b42;
   --gray-color: #374754;
   --black-color: #18171d;
+  --trans-primary-color: #dc3545;
+  --trans-secondary-color: #0d6efd;
+  --trans-light-color: #f9fafb;
+
   --bg-light-color: #ffffff;
   --bg-dark-color: #252b42;
   --bg-gradient-color: linear-gradient(40deg, #ef2779 0.79%, #7834be 79.29%);
